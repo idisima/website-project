@@ -1,0 +1,325 @@
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century Gothic;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    position: absolute;
+    left: -250px;
+    width: 250px;
+    height: 98%;
+    background: #042331;
+    transition: all .5s ease;
+    opacity: 0.5;
+    overflow: hidden;
+}
+#sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+#sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba (255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+#sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #dfe7eb;
+    border-radius: 3px;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    /* transition: all 5s; */
+}
+label #cancel{
+    z-index: 1111;
+    left: 150px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+     transition: all 5s;
+}
+#check:checked ~ #sidebar{
+left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+    /* transition: all .5s ease; */
+    }
+    #check:checked ~ label #cancel{
+        left: 200px;
+        }
+
+
+
+#image{
+    margin: 0 0 0 2.5em;
+  padding-bottom: 2em;
+}
+#signin{
+   width: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 10px 0;
+    background: #ff156A;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    
+}
+#entirecontainer{
+    margin-left: 25em;
+    margin-top: 7em;
+    
+}
+.allinput{
+    background-color: #e6e6e6;
+    border: none;
+    width: 70%;
+    padding: 0.5em 0 0.5em 0;
+    text-align: left;
+}
+#singleinput{
+   
+    text-align: center;
+    padding: 0.5em 0 0.5em;
+    border-color: #1E956E;
+    margin-right: 3px;
+    margin-top: -0.5em;
+   
+}
+.forgotpassword{
+    color: #1E956E;
+}
+.header {
+    overflow: hidden;
+    background-color: #ee1cd2;
+    padding: 20px 10px;
+    height: 12vh;
+  }
+
+  .Logo img{
+    float: right;
+    width: 100px;
+    margin: -80px -17em  0 20px ;
+           
+    }
+
+@media (min-width: 500px) {
+    #entirecontainer{
+        height: 20em;
+        display: block;
+    }
+    body{
+        background-color: rgb(252, 246, 247);
+
+        position: absolute;
+    }
+    #image,#signin,.allinput{
+        float: none;
+        text-align: center;
+        width: 70%;
+     }
+     #singleinput{
+        margin-left: -10em;
+        margin-top: 0.5em;
+     }
+     .forgotpassword{
+        margin-left: 7em;
+     }
+     
+   #signin{
+    width: 80px ;
+    position: absolute;
+    margin-left: 2em;
+   }
+}
+@media (min-width: 800px) {
+    #entirecontainer{
+        width: 70%;
+        margin-top: 3em;
+    
+    }
+    #image,.allinput{
+        float: none;
+        text-align: left;
+        width: 50em;
+     }
+     #signin{
+        width: 100px ;
+        position: absolute;
+        margin-left: 40em;
+       }
+       #singleinput{
+        margin-left:20em;
+        margin-top: 0.5em;
+     }
+     .forgotpassword{
+        margin-left: 35em;
+     }
+     footer{
+        opacity: 0.7;
+        background: #063146;
+        height: auto;
+        width: 98.5vw;
+        font-family: "open Sans";
+        padding-top: 40px;
+        color: #fff;
+        margin-top: 3em;
+        position: absolute;
+    }
+
+    footer{
+        opacity: 0.7;
+        background: #063146;
+        height: 20em;
+        width: 98.5vw;
+        font-family: "open Sans";
+        padding-top: 40px;
+        color: #fff;
+        margin-top: -0.1em;
+    }
+    .footer-content{
+        display: block;
+        flex-direction: row;
+    }
+    .footer-content h2{
+        font-size: 2em;
+        font-weight: 400;
+        text-transform:capitalize;
+        line-height: 3rem;
+        margin-left: 2em;
+        margin-top: -0.4em;
+    }
+    .footer-content p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+        margin-left: 2em;
+    }
+    .footer-bottom{
+        margin-left: 50em;
+        margin-top: 2.8em;
+    
+    }
+    
+    #addresscontainer{
+        margin-top: -13em;
+        margin-left: 50em;
+    }
+    
+    #address{
+        display: flex;
+        text-align: center;
+        justify-content: left;
+        margin: 10px 7px 0;
+        max-width: 500px;
+        font-size: 20px;
+    }
+
+    .social-media{
+        margin: 20px 0;
+        margin-left: 50em;
+        margin-top: -3em;
+      }
+      
+      .social-media a{
+        color: #05b6e7;
+        margin-right: 25px;
+        font-size: 22px;
+        text-decoration: none;
+        transition: .3s linear;
+      }
+      
+      .social-media a:hover{
+        color: #fc5c65;
+      }
+    .header {
+        overflow: hidden;
+        background-color: #ee1cd2;
+        padding: 20px 10px;
+        height: 12vh;
+        width: 140%;
+      }
+
+}

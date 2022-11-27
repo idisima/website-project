@@ -1,0 +1,189 @@
+
+  
+  .card{
+    
+    margin-top: 1em;
+    display: inline-block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 300px;
+    position: relative;
+    
+  }
+  #product-card{
+    margin-left: 15em;
+    display: block;
+  }
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    position: relative;
+  }
+
+
+  @media (min-width: 510px){
+
+    footer{
+        opacity: 0.7;
+        background: #063146;
+        height: 20em;
+        width: 98.5vw;
+        font-family: "open Sans";
+        padding-top: 40px;
+        color: #fff;
+        margin-top: 3em;
+    }
+    .footer-content{
+        display: block;
+        flex-direction: row;
+    }
+    .footer-content h2{
+        font-size: 2em;
+        font-weight: 400;
+        text-transform:capitalize;
+        line-height: 3rem;
+        margin-left: 2em;
+        margin-top: -0.4em;
+    }
+    .footer-content p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 20px;
+        margin-left: 2em;
+    }
+    .footer-bottom{
+        margin-left: 40em;
+        margin-top: 2.8em;
+    
+    }
+    
+    #addresscontainer{
+        margin-top: -15em;
+        margin-left: 40em;
+    }
+    
+    #address{
+        display: flex;
+        text-align: center;
+        justify-content: left;
+        margin: 10px 7px 0;
+        max-width: 500px;
+        font-size: 20px;
+    }
+
+    .social-media{
+        margin: 20px 0;
+        margin-left: 40em;
+        margin-top: -3em;
+      }
+      
+      .social-media a{
+        color: #05b6e7;
+        margin-right: 25px;
+        font-size: 22px;
+        text-decoration: none;
+        transition: .3s linear;
+      }
+      
+      .social-media a:hover{
+        color: #fc5c65;
+      }
+
+#sidebar{
+    position: absolute;
+    left: -250px;
+    width: 250px;
+    height: 90%;
+    background: #042331;
+    transition: all .5s ease;
+    opacity: 0.5;
+    overflow: hidden;
+}
+#sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+#sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba (255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    /* transition: .4s; */
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+#sidebar ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #dfe7eb;
+    border-radius: 3px;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    /* transition: all 5s; */
+}
+label #cancel{
+    z-index: 1111;
+    left: 150px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+}
+#check:checked ~ #sidebar{
+left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+    /* transition: all .5s ease; */
+}
+ #check:checked ~ label #cancel{
+    left: 200px;
+}
+
+.Logo img{
+    float: right;
+    width: 100px;
+    margin: -80px 50px  0 20px ;
+           
+    }
+    .header {
+        overflow: hidden;
+        background-color: #ee1cd2;
+        padding: 20px 10px;
+        height: 8vh;
+        width: 93em;
+        margin-left: -1em;
+      }
+}

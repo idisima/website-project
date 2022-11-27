@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="pay.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <img src="./homepage stuff/Logo.png" alt="" style="height: 60px;">
+        <div class="header-right">
+       
+        </div>
+      </div>
+
+    <div class="Logo">
+        <img src="./Logo.png" alt="">     
+    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label id="label" for="check">
+             <i class="fas fa-bars" id="cancel"></i>
+        </label>
+        <div id="sidebar">
+            <header>MENU</header>
+            <ul>
+                <li><a href="#"><i class="fas fa-house"></i>Home</a></li>
+                <li><a href="./about_us.html"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="./login.html"><i class="fas fa-stream"></i>Log-in</a></li>
+                <li><a href="product01.html"><i class="fas fa-calendar-week"></i>Products</a></li>
+                <li><a href="./shopping cart.html"><i class="fas fa-cart-shopping"></i>shopping cart</a></li>
+                <li><a href="#"><i class="fas fa-sliders-h"></i>Contact</a></li>
+              
+                 
+            </ul>
+        </div>
+        </nav> 
+
+    <form id="form" action="">
+        <h1>Payment</h1>
+        <label for="name">Payer Name</label><br>
+        <input class="box1" type="text" name="name" id="name" placeholder="Enter Name" 
+        required="required"><br>
+
+        <label for="Pemail">Email</label><br>
+        <input class="box1" type="email" name="email" id="email" placeholder="Enter Email" 
+        required="required"><br>
+
+        <label for="cardnum">Card Number</label><br>
+        <input class="box1" type="number" name="number" id="number" placeholder="1234 1234 1234 1234" required><br>
+        
+        <div class="div1">
+            <label for="cardex">Card expiry month</label><br>
+            <input class="box2" type="month" name="month" id="month" placeholder="MM" required><br>
+        </div>
+
+        <div class="div1">
+            <label for="cardyr">Card expiry year</label><br>
+            <input class="box2" type="year" name="year" id="year" placeholder="yyyy" required><br>
+        </div>
+
+        <div class="div1">
+            <label for="cardCVC">Card CVC</label><br>
+            <input class="box2" type="cvc" name="cvc" id="CVC" placeholder="cvc" required><br>
+        </div>
+        <button class="btn" type="submit">Pay Now</button>
+        <button class="btn" id="Close" type="button">Close</button>
+    </form>
+    <footer>
+        <div class="footer-content">
+           <h2 class="Roar1 footlast">ROAR BIKERS</h2>
+           <p class="footlast">Roar bike is a concept brand, a manufacturer of high performance travel/sports mountain bikes sold exclusively from their website.
+            The roar bikes are exclusively branded for professional bike riders or the ones who use the bikes frequently to communute to their workplaces/schools.
+            </p>
+
+
+            <div class="social-media">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+
+        <div id="addresscontainer">
+           <div id="address"><h3> <strong>ADDRESS</strong></h3></div>
+           <div id="address"> <span><i class="fas fa-map-marker-alt"></i></span>
+            <span>yenagoa, Bayelsa state, Nigeria</span><br>
+         </div>
+
+         <div id="address"> <span><i class="fas fa-phone-alt"></i></span>
+             <span>07084645786</span>
+          </div>
+
+          <div id="address"> <span><i class="fas fa-envelope"></i></span>
+             <span><a href="https://www.gmail.com"></a> roarbikes@gmail.com</span>
+          </div>
+        </div>
+          
+       
+       </div><br> 
+           <div class="footer-bottom">
+               <p id="foot">copyright &copy;2022 Roarbikers. design by <span>Team Fend</span> <b>ALL RIGHT RESEREVED </b></p>
+           </div>
+           </footer>
+</body>
+</html>

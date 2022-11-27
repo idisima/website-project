@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart UI</title>
+	<link rel="stylesheet" type="text/css" href="./shopping cart.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+
+	<div class="header">
+        <img src="./homepage stuff/Logo.png" alt="" style="height: 60px;">
+        <div class="header-right">
+       
+        </div>
+      </div>
+
+    <nav>
+    <input type="checkbox" id="check">
+    <label id="label" for="check">
+       
+         <i class="fas fa-bars" id="cancel"></i>
+    </label>
+    <div id="sidebar">
+        <header>MENU</header>
+        <ul>
+            <li><a href="./newhome.html"><i class="fas fa-house"></i>Home</a></li>
+            <li><a href="./about_us.html"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="./login.html"><i class="fas fa-stream"></i>Log-in</a></li>
+            <li><a href="product01.html"><i class="fas fa-calendar-week"></i>Products</a></li>
+            <li><a href="#"><i class="fas fa-cart-shopping"></i>shopping cart</a></li>
+            <li><a href="./contact.html"><i class="fas fa-sliders-h"></i>Contact</a></li>
+           
+             
+        </ul>
+    </div>
+    </nav>
+
+   <div class="CartContainer">
+   	   <div class="Header">
+		<i class="fa-sharp fa-solid fa-bars"></i>
+   	   	<h3 class="Heading">Shopping Cart</h3>
+			  
+			  
+   	   	
+   	   	<h5 class="Action">Remove all</h5>
+		<a href="./product.html"></a>
+   	   	
+   	   </div>
+
+   	   <div class="Cart-Items">
+   	   	  <div class="image-box">
+   	   	  	<img src="./Images/download (4).jpeg"style={{ height="120px" }} />
+   	   	  </div>
+   	   	  
+   	   	  <div class="about">       	
+			<h1 class="title">Bicycle</h1>
+		 <img src="./Images/download (4).jpeg"style={ height="30px"} />
+   	   	  </div>
+   	   	  
+   	   	  <div class="counter">
+   	   
+			<button class="btn" onclick="btnplus1()">+</button>
+			<span id="div" class="count">1</span>
+			<button class="btnminus" onclick="btnminus1()">-</button>
+   	   	  </div>
+   	   	  
+   	   	  <div class="prices">
+   	   	  	<div id="bicycle" class="amount"></div>
+   	   	  	
+   	   	  	<div class="remove"><u>Remove</u></div>
+   	   	  	<div class="save"><u></u></div>
+   	   	  </div>
+   	   </div>
+
+   	   <div class="Cart-Items pad">
+   	   	  <div class="image-box">
+   	   	  	<img src="./Images/download (1).jpeg"style ={{ height="120px" }} />
+   	   	  </div>
+   	   	  
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Scooters</h1>
+   	   	  	
+   	   	  	<img src="./Images/download (1).jpeg"style={{ height="30px" }}/>
+   	   	  </div>
+				<div class="counter">
+   	   	  	<button class="btn" onclick="btnplus2()">+</button>
+   	   	  	<span id="div2" class="count">1</span>
+   	   	  	<button class="btnminus" onclick="btnminus2()">-</button>
+   	   	  </div>
+   	   	  
+   	   	  <div class="prices">
+   	   	  	<div id="scooterPrice" class="amount"></div>
+   	   	  	
+   	   	  	<div class="save"><u></u></div>
+   	   	  	<div class="remove"><u>Remove</u></div>
+   	   	  </div>
+   	   </div>
+
+
+				<div class="Cart-Items pad">
+					<div class="image-box">
+						<img src="./Images/download (2).jpeg"style ={{ height="120px" }} />
+					</div>
+					
+					<div class="about">
+						<h1 class="title">Sphynx</h1>
+						
+						<img src="./Images/download (2).jpeg"style={{ height="30px" }}/>
+					</div>
+
+   	   	  <div class="counter">
+			<button class="btn" onclick="btnplus3()">+</button>
+   	   	  	<span id="div3" class="count">0</span>
+   	   	  	<button class="btnminus" onclick="btnminus3()">-</button>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div id="sphynxPrice" class="amount"></div>
+   	   	  	
+   	   	  	<div class="save"><u></u></div>
+   	   	  	<div class="remove"><u>Remove</u></div>
+   	   	  </div>
+   	   </div>
+   	 <hr> 
+   	 
+   	 <div class="checkout">
+   	 <div class="total">
+   	 	<div>
+   	 		<div class="Subtotal">Sub-Total</div>
+   	 		<span id="itemlist" class="items"></span>
+				<a href="./product01.html"><button class="back">Back</button></a>
+   	 	<div id="totalbalcance" class="total-amount"></div>
+   	 </div>
+   	 <a href="./pay.html"><button class="button">Pay Now</button></div></a>
+		
+   </div>
+   <footer>
+	<div class="footer-content">
+	   <h2 class="Roar1 footlast"><strong> ROAR BIKERS </strong></h2>
+	   <p class="footlast">Roar bike is a concept brand, a manufacturer of high performance travel/sports mountain bikes sold exclusively from their website.
+		The roar bikes are exclusively branded for professional bike riders or the ones who use the bikes frequently to communute to their workplaces/schools.
+		</p>
+
+
+	   <div class="social-media">
+		<a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+		<a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+		<a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+	  </div>
+
+	<div id="addresscontainer">
+	   <div id="address"><h3> <strong>ADDRESS</strong></h3></div>
+	   <div id="address"> <span><i class="fas fa-map-marker-alt"></i></span>
+		<span>yenagoa, Bayelsa state, Nigeria</span><br>
+	 </div>
+
+	 <div id="address"> <span><i class="fas fa-phone-alt"></i></span>
+		 <span>07084645786</span>
+	  </div>
+
+	  <div id="address"> <span><i class="fas fa-envelope"></i></span>
+		 <span><a href="https://www.gmail.com"></a> roarbikes@gmail.com</span>
+	  </div>
+	</div>
+	  
+   
+   </div><br> 
+	   <div class="footer-bottom">
+		   <p id="foot">copyright &copy;2022 Roarbikers. design by <span>Team Fend</span> <b>ALL RIGHT RESEREVED </b></p>
+	   </div>
+	   </footer>
+
+
+  
+   <script src="shopping cart.js"></script>
+</body>
+</html>
+
