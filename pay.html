@@ -40,36 +40,35 @@
         </div>
         </nav> 
 
-    <form id="form" action="">
-        <h1>Payment</h1>
-        <label for="name">Payer Name</label><br>
-        <input class="box1" type="text" name="name" id="name" placeholder="Enter Name" 
-        required="required"><br>
-
-        <label for="Pemail">Email</label><br>
-        <input class="box1" type="email" name="email" id="email" placeholder="Enter Email" 
-        required="required"><br>
-
-        <label for="cardnum">Card Number</label><br>
-        <input class="box1" type="number" name="number" id="number" placeholder="1234 1234 1234 1234" required><br>
-        
-        <div class="div1">
-            <label for="cardex">Card expiry month</label><br>
-            <input class="box2" type="month" name="month" id="month" placeholder="MM" required><br>
-        </div>
-
-        <div class="div1">
-            <label for="cardyr">Card expiry year</label><br>
-            <input class="box2" type="year" name="year" id="year" placeholder="yyyy" required><br>
-        </div>
-
-        <div class="div1">
-            <label for="cardCVC">Card CVC</label><br>
-            <input class="box2" type="cvc" name="cvc" id="CVC" placeholder="cvc" required><br>
-        </div>
-        <button class="btn" type="submit">Pay Now</button>
-        <button class="btn" id="Close" type="button">Close</button>
-    </form>
+        <form id="form" action="payment sucessful .html">
+            <h1>Payment</h1>
+            <label for="name">Payer Name</label><br>
+            <input class="box1" type="text" name="name" id="name" placeholder="Enter Name" 
+            required="required"><br>
+    
+            <label for="Pemail">Email</label><br>
+            <input class="box1" type="email" name="email"  id="Email" onkeydown="validEmail()" placeholder="Enter Email"><br>
+            <span id="email-error"></span>
+    
+            <label for="cardnum">Card Number</label><br>
+            <input class="box1" type="number" name="number" id="number" placeholder="1234 1234 1234 1234" required><br>
+            
+            <div class="div1">
+                <label for="cardex">Card expiry month</label><br>
+                <input class="box2" type="month" name="month" id="month" placeholder="MM" required><br>
+            </div>
+    
+            <div class="div1">
+                <label for="cardyr">Card expiry year</label><br>
+                <input class="box2" type="year" name="year" id="year" placeholder="yyyy" required><br>
+            </div>
+    
+            <div class="div1">
+                <label for="cardCVC">Card CVC</label><br>
+                <input class="box2" type="cvc" name="cvc" id="CVC" placeholder="cvc" required><br>
+            </div>
+            <a href="payment sucessful .html"><button class="btn" type="submit">Pay Now </button></a>
+        </form>
     <footer>
         <div class="footer-content">
            <h2 class="Roar1 footlast">ROAR BIKERS</h2>
@@ -107,5 +106,7 @@
                <p id="foot">copyright &copy;2022 Roarbikers. design by <span>Team Fend</span> <b>ALL RIGHT RESEREVED </b></p>
            </div>
            </footer>
+
+           <script src="pay.js"></script>
 </body>
 </html>
